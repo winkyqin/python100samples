@@ -1,4 +1,5 @@
-# https://www.runoob.com/python/python-exercise-example84.html#题目：
+# https://www.runoob.com/python/python-exercise-example84.html
+# 题目：
 # 连接字符串。
 # 程序分析：
 # 无。

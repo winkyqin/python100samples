@@ -1,4 +1,5 @@
-# https://www.runoob.com/python/python-exercise-example90.html#题目：
+# https://www.runoob.com/python/python-exercise-example90.html
+# 题目：
 # 列表使用实例。
 # 程序分析：
 # 无。

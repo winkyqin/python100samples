@@ -43,7 +43,7 @@ def saveData2File(url, datas):
         if len(desc) > 1 and desc[1]:
             example.append(desc[1])
 
-        content = "#" + url
+        content = "#" + url + os.linesep
         print(content + os.linesep + str(example))
 
         def_fun = "def fun():\r  pass" + os.linesep
@@ -64,7 +64,7 @@ def saveData2File(url, datas):
 
 
 if __name__ == '__main__':
-    for num in range(1, 101):
+    for num in range(3, 101):
         # print(url1.format(num)) #format
         # print(url2 % num)#
         url = f"https://www.runoob.com/python/python-exercise-example{num}.html"

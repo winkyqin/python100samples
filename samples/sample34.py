@@ -1,4 +1,5 @@
-# https://www.runoob.com/python/python-exercise-example34.html#题目：
+# https://www.runoob.com/python/python-exercise-example34.html
+# 题目：
 # 练习函数调用。
 # 程序分析：
 # RUNOOB

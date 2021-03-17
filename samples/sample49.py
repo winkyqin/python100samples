@@ -1,4 +1,5 @@
-# https://www.runoob.com/python/python-exercise-example49.html#题目：
+# https://www.runoob.com/python/python-exercise-example49.html
+# 题目：
 # 使用lambda来创建匿名函数。
 # 程序分析：
 # 无

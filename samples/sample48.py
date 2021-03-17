@@ -1,4 +1,5 @@
-# https://www.runoob.com/python/python-exercise-example48.html#题目：
+# https://www.runoob.com/python/python-exercise-example48.html
+# 题目：
 # 数字比较。
 # 程序分析：
 # 无
