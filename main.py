@@ -26,8 +26,7 @@ def addTitle2Readme(url, datas):
         # print(html_text)
         tree = etree.HTML(html_text)
         title = tree.xpath('//div[@class="article-intro"]/h1/text()')[0]
-        titles += os.linesep + f"[{title}]({url})"
-        titles.replace("'", "")
+        titles += os.linesep + f"[{title}]({url})" + os.linesep
 
     print(titles)
 
