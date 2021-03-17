@@ -20,6 +20,22 @@ def get100samplesfromRunoob(url):
     return data
 
 
+def addTitle2Readme(url, datas):
+    titles = ""
+    for html_text in datas:
+        # print(html_text)
+        tree = etree.HTML(html_text)
+        title = tree.xpath('//div[@class="article-intro"]/h1/text()')[0]
+        titles += os.linesep + f"[{title}]({url})"
+        titles.replace("'", "")
+
+    print(titles)
+
+    readme = open("README.md", "a")
+    readme.write(titles)
+    readme.close()
+
+
 def saveData2File(url, datas):
     for html_text in datas:
         # print(html_text)
@@ -34,9 +50,9 @@ def saveData2File(url, datas):
             example = tree.xpath('//div[@class="article-intro"]/p[2]/text()')
             desc = tree.xpath('//div[@class="article-intro"]/p[4]/text()')
 
-        print(title)
-        print(example)
-        print(desc)
+        # print(title)
+        # print(example)
+        # print(desc)
 
         if desc and desc[0]:
             example.insert(1, desc[0])
@@ -64,8 +80,9 @@ def saveData2File(url, datas):
 
 
 if __name__ == '__main__':
-    for num in range(3, 101):
+    for num in range(1, 101):
         # print(url1.format(num)) #format
         # print(url2 % num)#
         url = f"https://www.runoob.com/python/python-exercise-example{num}.html"
-        saveData2File(url, get100samplesfromRunoob(url))
+        # saveData2File(url, get100samplesfromRunoob(url))
+        addTitle2Readme(url, get100samplesfromRunoob(url))
